@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+a:hover {
+    color: #4166f5;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+input[type="text"] {
+  background-color: #26619c;
+  width: 250px;
+  height: 30px;
+  font-size: 20px;
+  color: white;
+}
+
+a {
+			color: #00bfff;
+			text-decoration: none;
+			background-color: black;
+			padding: 0px;
+			border-radius: 0px;
+			font-size: 19px;
+		}
+		
+input[type=submit] {
+  background-color: #545aa7;
+  color: white;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;;
+  flex-direction: column;
+}	
+
+button:hover {
+			background-color: #4682b4;
+		}	
+		
+button {
+			background-color: #545aa7;
+			border: none;
+			color: white;
+			padding: 5px 5px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			margin: 4px 2px;
+			cursor: pointer;
+		}
+
+body {
+  color: #00FFFF;
+  background-color: black;
+  margin-top: 50px;
+}
+
+h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+
+</style>
+</head>
+
+<body>
+
+<video autoplay muted loop id="myVideo">
+  <source src="https://giant.gfycat.com/AdolescentWatchfulAfricanpiedkingfisher.mp4" type="video/mp4">
+</video>
+
+<div>
+<center>
+<br>
+<div class="block-banner">
+
+
+<h2>repacks </h2>
+<h3>(heavily compressed games, sometimes long install times)</h3>
+
+<h3>fitgirl repacks</h3>
+
+<form action="https://fitgirl-repacks.site/" method="get">
+  <input type="text" id="search" name="s"><br>
+  <input type="submit" value="search">
+</form> 
+
+<h3>dodi repacks</h3>
+
+<form action="https://dodi-repacks.site/" method="get">
+  <input type="text" id="search" name="s"><br>
+  <input type="submit" value="search">
+</form>
+
+<h3>elamigos bing search</h3>
+	<form onsubmit="searchBing(event)">
+		<label for="searchTerm">Search:</label>
+		<input type="text" id="searchTerm" name="searchTerm">
+		<button type="submit">Search</button>
+	</form>
+
+	<script>
+		function searchBing(event) {
+			event.preventDefault();
+			const searchTerm = document.getElementById('searchTerm').value;
+			const url = `https://www.bing.com/search?q=+site:elamigos.site ${searchTerm}`;
+			window.open(url, '_blank');
+		}
+	</script>
+<br>
+<br>
+<h4>recommended</h4>
+<a href="https://dodi-repacks.site/1580-hogwarts-legacy-digital-deluxe-edition-build-10461750-all-dlcs-bonus-osts-multi14-from-56-8-gb-empress-dodi-repack/">Hogwarts Legacy Digital Deluxe Edition @ dodi-repacks</a>
+<br>
+<a href="https://fitgirl-repacks.site/diablo-ii-resurrected-pc/">Diablo II: Resurrected @ fitgirl</a>
+
+<p>---------------------------------------------------------</p>
+<br>
+<br>
+<br>
+<p>other bing searches</p>
+<label for="search-input-1">gog-games.to:</label>
+<input type="text" id="search-input-1">
+<button id="search-button-1">Search</button>
+
+<label for="search-input-2">gload.to:</label>
+<input type="text" id="search-input-2">
+<button id="search-button-2">Search</button>
+
+<label for="search-input-3">steamrip.com:</label>
+<input type="text" id="search-input-3">
+<button id="search-button-3">Search</button>
+
+<iframe id="search-results" width="80%" height="700px" style="display: none;"></iframe>
+
+<script>
+/* select video element */
+var video = document.querySelector('video');
+
+/* apply brightness filter */
+video.style.filter = 'brightness(50%)';
+</script>
+
+<script>
+  const searchInput1 = document.querySelector('#search-input-1');
+  const searchButton1 = document.querySelector('#search-button-1');
+  const searchInput2 = document.querySelector('#search-input-2');
+  const searchButton2 = document.querySelector('#search-button-2');
+  const searchInput3 = document.querySelector('#search-input-3');
+  const searchButton3 = document.querySelector('#search-button-3');
+  const searchResults = document.querySelector('#search-results');
+
+  searchButton1.addEventListener('click', () => {
+    const query = searchInput1.value;
+    searchResults.src = `https://www.bing.com/search?q=site:gog-games.to+${encodeURIComponent(query)}`;
+    searchResults.style.display = 'block';
+  });
+
+  searchInput1.addEventListener('keydown', (event) => {
+    if (event.key === 'Enter') {
+      searchButton1.click();
+    }
+  });
+
+  searchButton2.addEventListener('click', () => {
+    const query = searchInput2.value;
+    searchResults.src = `https://www.bing.com/search?q=site:gload.to+${encodeURIComponent(query)}`;
+    searchResults.style.display = 'block';
+  });
+
+  searchInput2.addEventListener('keydown', (event) => {
+    if (event.key === 'Enter') {
+      searchButton2.click();
+    }
+  });
+
+  searchButton3.addEventListener('click', () => {
+    const query = searchInput3.value;
+    searchResults.src = `https://www.bing.com/search?q=site:steamrip.com+${encodeURIComponent(query)}`;
+    searchResults.style.display = 'block';
+  });
+
+  searchInput3.addEventListener('keydown', (event) => {
+    if (event.key === 'Enter') {
+      searchButton3.click();
+    }
+  });
+</script>
+
+
+</center>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</div>
+
+</body>
+</html>

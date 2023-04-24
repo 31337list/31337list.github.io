@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+a {
+			color: pink;
+			text-decoration: none;
+			background-color: black;
+			padding: 0px;
+			border-radius: 0px;
+			font-size: 22px;
+		}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;;
+  flex-direction: column;
+}
+
+a:hover {
+			background-color: black;
+			color: blue;
+		}
+
+button:hover {
+			background-color: #7a7fbc;
+		}	
+		
+button {
+			background-color: #34497d;
+			border: none;
+			color: white;
+			padding: 7px 7px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			margin: 4px 2px;
+			cursor: pointer;
+		}
+
+body {
+
+  color: pink;
+  background-color: black;
+}
+
+
+
+</style>
+</head>
+
+<body>
+<div>
+<center>
+<br>
+<img src="gif5.gif" alt="lucy" width="380" height="230">
+<br>
+
+<label for="search-input-1">Search on vimm.net:</label>
+<input type="text" id="search-input-1">
+<button id="search-button-1">Search</button>
+<br>
+<label for="search-input-2">Search on romulation.org:</label>
+<input type="text" id="search-input-2">
+<button id="search-button-2">Search</button>
+<br>
+<label for="search-input-3">Search on edgeemu.net:</label>
+<input type="text" id="search-input-3">
+<button id="search-button-3">Search</button>
+
+<iframe id="search-results" width="80%" height="700px" style="display: none;"></iframe>
+
+<script>
+  const searchInput1 = document.querySelector('#search-input-1');
+  const searchButton1 = document.querySelector('#search-button-1');
+  const searchInput2 = document.querySelector('#search-input-2');
+  const searchButton2 = document.querySelector('#search-button-2');
+  const searchInput3 = document.querySelector('#search-input-3');
+  const searchButton3 = document.querySelector('#search-button-3');
+  const searchResults = document.querySelector('#search-results');
+
+  searchButton1.addEventListener('click', () => {
+    const query = searchInput1.value;
+    searchResults.src = `https://www.bing.com/search?q=site:vimm.net+${encodeURIComponent(query)}`;
+    searchResults.style.display = 'block';
+  });
+
+  searchInput1.addEventListener('keydown', (event) => {
+    if (event.key === 'Enter') {
+      searchButton1.click();
+    }
+  });
+
+  searchButton2.addEventListener('click', () => {
+    const query = searchInput2.value;
+    searchResults.src = `https://www.bing.com/search?q=site:romulation.org+${encodeURIComponent(query)}`;
+    searchResults.style.display = 'block';
+  });
+
+  searchInput2.addEventListener('keydown', (event) => {
+    if (event.key === 'Enter') {
+      searchButton2.click();
+    }
+  });
+
+  searchButton3.addEventListener('click', () => {
+    const query = searchInput3.value;
+    searchResults.src = `https://www.bing.com/search?q=site:edgeemu.net+${encodeURIComponent(query)}`;
+    searchResults.style.display = 'block';
+  });
+
+  searchInput3.addEventListener('keydown', (event) => {
+    if (event.key === 'Enter') {
+      searchButton3.click();
+    }
+  });
+</script>
+
+
+
+
+<br>
+
+<button onclick="window.location.href=''"></button>
+<button onclick="window.location.href=''"></button>
+<button onclick="window.location.href=''"></button>
+<button onclick="window.location.href=''"></button>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</center>
+	
+	
+</div>
+
+</body>
+</html>

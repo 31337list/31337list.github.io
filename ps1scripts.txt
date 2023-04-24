@@ -1,0 +1,82 @@
+
+#############################################################################################
+
+# PDF TO TEXT
+# This script uses the iTextSharp library to extract text from a PDF file and save it to a text file. 
+# You’ll need to have the iTextSharp library installed on your system and update the path to the itextsharp.dll
+# file in the script
+
+# Prompt the user for the source and destination file paths
+$sourceFilePath = Read-Host -Prompt "Enter the path to the source file"
+$destinationFilePath = Read-Host -Prompt "Enter the path to the destination file"
+
+# Load the required assembly
+Add-Type -Path "C:\path\to\itextsharp.dll"
+
+# Create a PDF reader object
+$pdfReader = New-Object iTextSharp.text.pdf.PdfReader($sourceFilePath)
+
+# Create a string builder to hold the extracted text
+$stringBuilder = New-Object System.Text.StringBuilder
+
+# Loop through each page in the PDF
+for ($page = 1; $page -le $pdfReader.NumberOfPages; $page++) {
+    # Extract the text from the current page
+    $text = [iTextSharp.text.pdf.parser.PdfTextExtractor]::GetTextFromPage($pdfReader, $page)
+
+    # Append the extracted text to the string builder
+    $stringBuilder.AppendLine($text)
+}
+
+# Write the extracted text to the destination file
+[System.IO.File]::WriteAllText($destinationFilePath, $stringBuilder.ToString())
+
+# Close the PDF reader
+$pdfReader.Close()
+
+
+#############################################################################################
+
+# MP4 TO MP3
+# this is a simple powershell script to convert mp4 files to mp3 files
+#Make sure to have the NAudio library installed on your system for this 
+#script to work. You can install it using the following command:
+# Install-Package NAudio -ProviderName NuGet
+
+# Prompt the user for the source and destination file paths
+$sourceFilePath = Read-Host -Prompt "Enter the path to the source file"
+$destinationFilePath = Read-Host -Prompt "Enter the path to the destination file"
+
+# Load the required assembly
+Add-Type -AssemblyName System.Windows.Media
+
+# Create a media element
+$mediaElement = New-Object System.Windows.Controls.MediaElement
+
+# Set the source of the media element to the source file
+$mediaElement.Source = New-Object System.Uri($sourceFilePath)
+
+# Wait for the media to load
+while ($mediaElement.NaturalDuration.TimeSpan -eq [System.TimeSpan]::Zero) {
+    Start-Sleep -Milliseconds 100
+}
+
+# Get the audio stream from the media element
+$audioStream = $mediaElement.AudioStream
+
+# Create a wave stream from the audio stream
+$waveStream = New-Object NAudio.Wave.WaveChannel32($audioStream)
+
+# Create an MP3 file writer
+$mp3FileWriter = New-Object NAudio.Lame.LameMP3FileWriter($destinationFilePath, $waveStream.WaveFormat, 128)
+
+# Write the wave stream to the MP3 file writer
+[NAudio.Wave.WaveFileWriter]::WriteWavFileToStream($mp3FileWriter, $waveStream)
+
+# Close the MP3 file writer
+$mp3FileWriter.Close()
+
+#############################################################################################
+
+
+

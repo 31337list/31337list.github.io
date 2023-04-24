@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+input[type="text"] {
+  background-color: #fce6f4;
+}
+
+button {
+  background-color: #c0aacd;
+  color: black;
+  font-size: 13px;
+  }
+
+iframe {
+    border: 5px solid black;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 21px 21px 21px black;
+}
+
+a {
+			color: pink;
+			text-decoration: none;
+			background-color: black;
+			padding: 0px;
+			border-radius: 0px;
+		}
+		
+input[type=submit] {
+  background-color: #c0aacd;
+  color: black;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;;
+  flex-direction: column;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+body {
+  background-image: url('gifbackground.gif');
+  background-repeat: repeat;
+  background-size: cover;
+  color: pink;
+}
+
+a:hover {
+			background-color: black;
+			color: white;
+		}
+
+.black-box {
+  position: absolute;
+  width: 295px;
+  height: 220px;
+  background-color: black;
+  z-index: -1;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 50px;
+}
+
+h2 {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+		
+</style>
+</head>
+<body>
+<center>
+
+<video autoplay muted loop id="myVideo">
+  <source src="https://giant.gfycat.com/QuarterlyWiltedAmericanratsnake.mp4" type="video/mp4">
+</video>
+
+
+<div class="black-box"></div>
+
+
+<h4> 9anime mirrors</h4>
+
+<form>
+  <label for="search1">9anime.pl:</label>
+  <input type="text" id="search1" name="search1" onkeydown="if (event.keyCode == 13) {myFunction();}"><br>
+  <label for="search2">9anime.gs:</label>
+  <input type="text" id="search2" name="search2" onkeydown="if (event.keyCode == 13) {myFunction();}"><br>
+  <label for="search3">9anime.to:</label>
+  <input type="text" id="search3" name="search3" onkeydown="if (event.keyCode == 13) {myFunction();}"><br>
+  <input type="button" value="Submit" onclick="myFunction()">
+</form> 
+
+<br>
+<p style="color: pink;"><span style="background-color: black;">!! use <a href="https://github.com/gorhill/uBlock" target="_blank">uBlock Origin !!</a></span></p>
+
+
+
+<div id="myDiv1" style="display:none;">
+<iframe id="myIframe1" src="" style="border:1px solid black; width: 80%; height: 1000px;" allowfullscreen></iframe>
+</div>
+
+
+
+<div id="myDiv2" style="display:none;">
+<iframe id="myIframe2" src="" style="border:1px solid black; width: 80%; height: 1000px;" allowfullscreen></iframe>
+</div>
+
+<br><br>
+
+<div id="myDiv3" style="display:none;">
+<iframe id="myIframe3" src="" style="border:1px solid black; width: 80%; height: 1000px;" allowfullscreen></iframe>
+</div>
+
+<script>
+function myFunction() {
+  var search1 = document.getElementById("search1").value;
+  var search2 = document.getElementById("search2").value;
+  var search3 = document.getElementById("search3").value;
+  
+  if (search1 != "") {
+    document.getElementById("myDiv1").style.display = "block";
+    document.getElementById("myIframe1").src = "http://9anime.pl/filter?keyword=" + search1;
+    document.getElementById("myDiv2").style.display = "none";
+    document.getElementById("myDiv3").style.display = "none";
+  }
+  
+  if (search2 != "") {
+    document.getElementById("myDiv2").style.display = "block";
+    document.getElementById("myIframe2").src = "http://9anime.gs/filter?keyword=" + search2;
+    document.getElementById("myDiv1").style.display = "none";
+    document.getElementById("myDiv3").style.display = "none";
+  }
+  
+  if (search3 != "") {
+    document.getElementById("myDiv3").style.display = "block";
+    document.getElementById("myIframe3").src = "https://9anime.to/filter?keyword=" + search3;
+    document.getElementById("myDiv1").style.display = "none";
+    document.getElementById("myDiv2").style.display = "none";
+  }
+}
+</script>
+
+<script>
+/* select video element */
+var video = document.querySelector('video');
+
+/* apply brightness filter */
+video.style.filter = 'brightness(30%)';
+</script>
+
+ <h2>attacker.tv</h2>
+    <input type="text" id="searchInput1" placeholder="" onkeydown="if (event.keyCode == 13) search1()">
+    <button onclick="search1()">Search</button>
+
+    <h2>putlocker.pe</h2>
+    <input type="text" id="searchInput2" placeholder="" onkeydown="if (event.keyCode == 13) search2()">
+    <button onclick="search2()">Search</button>
+
+    <script>
+        function search1() {
+            var searchInput = document.getElementById("searchInput1").value;
+            searchInput = searchInput.replace(/ /g, "-");
+            window.open("https://www1.attacker.tv/search/" + encodeURIComponent(searchInput));
+        }
+
+        function search2() {
+            var searchInput = document.getElementById("searchInput2").value;
+            searchInput = searchInput.replace(/ /g, "-");
+            window.open("https://putlocker.pe/search/" + encodeURIComponent(searchInput));
+        }
+    </script>
+    
+<h2>vidstream.to</h2>
+
+<form action="https://vidstream.to/search" method="get">
+  <input type="text" id="search" name="keyword">
+  <input type="submit" value="search">
+</form> 
+
+
+<h2>uflix.cc</h2>
+
+<form action="https://uflix.cc/search" method="get">
+  <input type="text" id="search" name="keyword">
+  <input type="submit" value="search">
+</form> 
+
+<h2>gogoanime.mom</h2>
+
+<form action="https://gogoanime.mom/search/" method="get">
+  <input type="text" id="search" name="keyword">
+  <input type="submit" value="search">
+</form> 
+
+<h2>8anime.ru</h2>
+
+<form action="https://anime8.ru/Search/" method="get">
+  <input type="text" id="search" name="s">
+  <input type="submit" value="search">
+</form> 
+
+<h2>zoro.to (anime)</h2>
+
+<form action="https://zoro.to/search" method="get">
+  <input type="text" id="search" name="keyword">
+  <input type="submit" value="search">
+</form>
+
+<h2>kissanime mirror</h2>
+
+<form action="https://kissanime.unblockit.click/Search/" method="get">
+  <input type="text" id="search" name="s">
+  <input type="submit" value="search">
+</form>
+  
+</div>
+</center>
+
+
+</body>
+</html>
+
+
+
