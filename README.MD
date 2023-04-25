@@ -1,3 +1,5 @@
+This is designed to be a one-stop shop for sourcing files, games, music, tv, movies and especially - anime.
+
 TODO:
 
 - add torrent searching
