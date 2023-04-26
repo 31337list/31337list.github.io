@@ -18,3 +18,5 @@ TODO:
 - manga search
 
 - add web-based emulators (next)
+
+- remove broken links from anime page
