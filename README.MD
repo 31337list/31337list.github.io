@@ -16,3 +16,5 @@ TODO:
 - android app
 
 - manga search
+
+- add web-based emulators (next)
