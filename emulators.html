@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Web-based emulators</title>
+	<style>
+		iframe {
+			position: fixed;
+			top: 60px;
+			left: 0;
+			width: 100%;
+			height: 93%;
+			z-index: 9999;
+			display: none;
+		}
+		
+		a {
+			color: pink;
+			text-decoration: none;
+			background-color: black;
+			padding: 0px;
+			border-radius: 0px;
+		}
+
+.block-banner {
+			background-color: black;
+			color: Pink;
+			padding: 16px;
+			height: 425px;
+			width: 25%;
+			float: center;
+			}
+			
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;;
+  flex-direction: column;
+}
+
+a:hover {
+			background-color: black;
+			color: red;
+		}	
+
+button:hover {
+			background-color: #353839;
+		}	
+		
+button {
+			background-color: black;
+			border: 5px solid;
+			border-color: #c90016;
+			color: pink;
+			padding: 8px 14px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 14px;
+			margin: 3px 2px;
+			cursor: pointer;
+		}
+
+body {
+	color: pink;
+	background-color: black;
+}
+
+p {
+	color: red;
+	background-color: black;
+	margin-left: 70px;
+}
+
+	</style>
+</head>
+<body>
+	<button onclick="document.getElementById('myFrame').style.display='block'; document.getElementById('myFrame').src='https://www.retrogames.cc/'">retrogames.cc</button>
+	<button onclick="document.getElementById('myFrame').style.display='block'; document.getElementById('myFrame').src='https://eclipseemu.me/play/'">eclipse</button>
+	<button onclick="document.getElementById('myFrame').style.display='block'; document.getElementById('myFrame').src='http://retrogamesbot.com/'">retrogamesbot</button>
+	<button onclick="document.getElementById('myFrame').style.display='block'; document.getElementById('myFrame').src='https://afterplay.io/play/recently-played'">afterplay</button>
+	<button onclick="document.getElementById('myFrame').style.display='block'; document.getElementById('myFrame').src='https://d07riv.github.io/diabloweb/'">diabloweb (d1)</button>
+	<button onclick="document.getElementById('myFrame').style.display='block'; document.getElementById('myFrame').src='https://dos.zone/'">dos.zone</button>
+	<button onclick="document.getElementById('myFrame').style.display='block'; document.getElementById('myFrame').src='https://play.webrcade.com/'">webrcade</button>
+	<button onclick="document.getElementById('myFrame').style.display='block'; document.getElementById('myFrame').src='https://weplayold.com/'">weplayold</button>
+	<button onclick="document.getElementById('myFrame').style.display='block'; document.getElementById('myFrame').src='https://www.neilb.net/n64wasm/'">n64wasm</button>
+	<button onclick="document.getElementById('myFrame').style.display='block'; document.getElementById('myFrame').src='https://linoscope.github.io/CAMLBOY/'">camlboy</button>
+	<button onclick="document.getElementById('myFrame').style.display='block'; document.getElementById('myFrame').src='https://ds.44670.org/'">dsplayer</button>
+
+	<iframe id="myFrame" allowfullscreen></iframe>
+	
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<p>these emulators will run in your browser, and some work well on mobile</p>
+<p>more will be added</p>
+
+</body>
+</html>
