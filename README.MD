@@ -19,4 +19,4 @@ TODO:
 
 - add meta tags to all pages
 
-- remove certain elements from iframes (esp. 9anime mirrors) to make it cleaner
+- remove top of iframes (esp. 9anime mirrors) to make it cleaner
