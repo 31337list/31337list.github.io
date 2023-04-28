@@ -18,3 +18,5 @@ TODO:
 - add meta tags to all pages
 
 - remove top of iframes (esp. 9anime mirrors) to make it cleaner
+
+- add book searching
