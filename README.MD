@@ -22,3 +22,5 @@ TODO:
 - add book searching
 
 - add rezi.one to games
+
+- add page or link for https://chat.chatbot.sex/chat/ aka https://github.com/xtekky/gpt4free
