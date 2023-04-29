@@ -20,3 +20,5 @@ TODO:
 - remove top of iframes (esp. 9anime mirrors) to make it cleaner
 
 - add book searching
+
+- add rezi.one to games
