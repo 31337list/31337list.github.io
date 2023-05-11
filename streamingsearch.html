@@ -115,7 +115,6 @@ h2 {
   <input type="button" value="Submit" onclick="myFunction()">
 </form> 
 
-<br>
 <p style="color: pink;"><span style="background-color: black;">!! use <a href="https://github.com/gorhill/uBlock" target="_blank">uBlock Origin !!</a></span></p>
 
 
@@ -180,6 +179,10 @@ video.style.filter = 'brightness(30%)';
     <h2>putlocker.pe</h2>
     <input type="text" id="searchInput2" placeholder="" onkeydown="if (event.keyCode == 13) search2()">
     <button onclick="search2()">Search</button>
+	
+    <h2>justchill.tv</h2>
+    <input type="text" id="searchInput3" placeholder="" onkeydown="if (event.keyCode == 13) search3()">
+    <button onclick="search3()">Search</button>
 
     <script>
         function search1() {
@@ -192,6 +195,12 @@ video.style.filter = 'brightness(30%)';
             var searchInput = document.getElementById("searchInput2").value;
             searchInput = searchInput.replace(/ /g, "-");
             window.open("https://putlocker.pe/search/" + encodeURIComponent(searchInput));
+        }
+		
+	function search3() {
+            var searchInput = document.getElementById("searchInput3").value;
+            searchInput = searchInput.replace(/ /g, "+");
+            window.open("https://www.justchill.tv/search?query=" + encodeURIComponent(searchInput));
         }
     </script>
     
@@ -244,6 +253,3 @@ video.style.filter = 'brightness(30%)';
 
 </body>
 </html>
-
-
-
