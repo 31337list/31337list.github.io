@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+input[type="text"] {
+  background-color: #17262e;
+}
+
+button {
+  background-color: #1d3d38;
+  color: #42955d;
+  font-size: 13px;
+  }
+
+iframe {
+    border: 5px solid black;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 21px 21px 21px black;
+}
+
+a {
+			color: #4ba96a;
+			text-decoration: none;
+			background-color: black;
+			padding: 0px;
+			border-radius: 0px;
+		}
+		
+input[type=submit] {
+  background-color: #c0aacd;
+  color: black;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;;
+  flex-direction: column;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+body {
+  background-image: url('gifbackground.gif');
+  background-repeat: repeat;
+  background-size: cover;
+  color: pink;
+  background-color: black;
+}
+
+a:hover {
+			background-color: black;
+			color: white;
+		}
+
+.black-box {
+  position: absolute;
+  width: 295px;
+  height: 220px;
+  background-color: black;
+  z-index: -1;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 50px;
+}
+
+h2 {
+  color: green;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+		
+</style>
+</head>
+
+<body>
+	
+<!-- make all buttons open in new tabs -->
+<script>
+    var buttons = document.getElementsByTagName('button');
+    for (var i = 0; i < buttons.length; i++) {
+        buttons[i].addEventListener('click', function() {
+            window.open(this.getAttribute('data-href'), '_blank');
+        });
+    }
+</script>
+
+<center>
+<p style="color: green;"><span style="background-color: black;">recommended vpn - <a href="https://mullvad.net/" target="_blank">mullvad vpn</a></span></p>
+<br>
+	<h2>1337x (recommended)</h2>
+    <input type="text" id="searchInput1" placeholder="" onkeydown="if (event.keyCode == 13) search1()">
+    <button onclick="search1()">Search</button>
+	<br><br>
+    <h2>RARBG (recommended)</h2>
+    <input type="text" id="searchInput2" placeholder="" onkeydown="if (event.keyCode == 13) search2()">
+    <button onclick="search2()">Search</button>
+	<br><br>
+    <h2>EZTV</h2>
+    <input type="text" id="searchInput3" placeholder="" onkeydown="if (event.keyCode == 13) search3()">
+    <button onclick="search3()">Search</button>
+	<br><br>
+	<h2>The Pirate Bay</h2>
+    <input type="text" id="searchInput4" placeholder="" onkeydown="if (event.keyCode == 13) search4()">
+    <button onclick="search4()">Search</button>
+	<br><br>
+	<h2>TorrentGalaxy</h2>
+    <input type="text" id="searchInput5" placeholder="" onkeydown="if (event.keyCode == 13) search5()">
+    <button onclick="search5()">Search</button>
+
+    <script>
+        function search1() {
+            var searchInput = document.getElementById("searchInput1").value;
+            searchInput = searchInput.replace(/ /g, "-");
+            window.open("https://1337x.unblockit.asia/search/" + encodeURIComponent(searchInput)  + "/1/");
+        }
+
+        function search2() {
+            var searchInput = document.getElementById("searchInput2").value;
+			searchInput = searchInput.replace(/ /g, "+");
+            window.open("https://rarbg2021.org/torrents.php?search=" + encodeURIComponent(searchInput));
+        }
+		
+		function search3() {
+            var searchInput = document.getElementById("searchInput3").value;
+            searchInput = searchInput.replace(/ /g, "+");
+            window.open("https://eztv.unblockit.asia/search/" + encodeURIComponent(searchInput));
+        }
+		
+		function search4() {
+			var searchInput = document.getElementById("searchInput4").value;
+			searchInput = searchInput.replace(/ /g, "+");
+			window.open("https://pirate-proxy.click/search.php?q=" + encodeURIComponent(searchInput));
+		}
+		
+		function search5() {
+			var searchInput = document.getElementById("searchInput5").value;
+			searchInput = searchInput.replace(/ /g, "+");
+			window.open("https://torrentgalaxy.unblockit.asia/torrents.php?search=" + encodeURIComponent(searchInput));
+		}
+    </script>
+
+</center>
+</body>
+</html>
