@@ -7,7 +7,7 @@ This is designed to be a one-stop shop for sourcing files, games, roms, manga, m
 
 TODO:
 
-- add torrent searching (DONE)
+- add http://jslinux.org/ to browser emulators
 
 - add music searching
 
