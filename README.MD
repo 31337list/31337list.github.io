@@ -7,8 +7,6 @@ This is designed to be a one-stop shop for sourcing files, games, roms, manga, m
 
 TODO:
 
-- add http://jslinux.org/ to browser emulators
-
 - add music searching
 
 - make the streaming page open all searches in iframes
