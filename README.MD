@@ -7,6 +7,8 @@ This is designed to be a one-stop shop for sourcing files, games, roms, manga, m
 
 TODO:
 
+- clean up jpgs into folder
+
 - add music searching
 
 - make the streaming page open all searches in iframes
