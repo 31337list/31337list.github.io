@@ -93,14 +93,14 @@ h2 {
 <div class="black-box"></div>
 
 
-<h4> 9anime mirrors</h4>
+<h4> 9anime/aniwave mirrors</h4>
 
 <form>
-  <label for="search1">9anime.pl:</label>
+  <label for="search1">aniwave.to:</label>
   <input type="text" id="search1" name="search1" onkeydown="if (event.keyCode == 13) {myFunction();}"><br>
-  <label for="search2">9anime.gs:</label>
+  <label for="search2">aniwave.bz:</label>
   <input type="text" id="search2" name="search2" onkeydown="if (event.keyCode == 13) {myFunction();}"><br>
-  <label for="search3">9anime.to:</label>
+  <label for="search3">aniwave.ws:</label>
   <input type="text" id="search3" name="search3" onkeydown="if (event.keyCode == 13) {myFunction();}"><br>
   <input type="button" value="Submit" onclick="myFunction()">
 </form> 
@@ -133,21 +133,21 @@ function myFunction() {
   
   if (search1 != "") {
     document.getElementById("myDiv1").style.display = "block";
-    document.getElementById("myIframe1").src = "https://9anime.pl/filter?keyword=" + search1;
+    document.getElementById("myIframe1").src = "https://aniwave.to/filter?keyword=" + search1;
     document.getElementById("myDiv2").style.display = "none";
     document.getElementById("myDiv3").style.display = "none";
   }
   
   if (search2 != "") {
     document.getElementById("myDiv2").style.display = "block";
-    document.getElementById("myIframe2").src = "https://9anime.gs/filter?keyword=" + search2;
+    document.getElementById("myIframe2").src = "https://aniwave.bz/filter?keyword=" + search2;
     document.getElementById("myDiv1").style.display = "none";
     document.getElementById("myDiv3").style.display = "none";
   }
   
   if (search3 != "") {
     document.getElementById("myDiv3").style.display = "block";
-    document.getElementById("myIframe3").src = "https://9anime.to/filter?keyword=" + search3;
+    document.getElementById("myIframe3").src = "https://aniwave.ws/filter?keyword=" + search3;
     document.getElementById("myDiv1").style.display = "none";
     document.getElementById("myDiv2").style.display = "none";
   }
