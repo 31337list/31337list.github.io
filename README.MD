@@ -26,3 +26,5 @@ TODO:
 - add page or link for https://github.com/xtekky/gpt4free
 
 - fix rom search, make all links open in new tabs
+
+- fix manga page (videos broke, make background black)
