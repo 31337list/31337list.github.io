@@ -162,7 +162,7 @@ var video = document.querySelector('video');
 video.style.filter = 'brightness(30%)';
 </script>
 
- <h2>attacker.tv</h2>
+ <h2>bingemaster</h2>
     <input type="text" id="searchInput1" placeholder="" onkeydown="if (event.keyCode == 13) search1()">
     <button onclick="search1()">Search</button>
 
@@ -178,7 +178,7 @@ video.style.filter = 'brightness(30%)';
         function search1() {
             var searchInput = document.getElementById("searchInput1").value;
             searchInput = searchInput.replace(/ /g, "-");
-            window.open("https://www1.attacker.tv/search/" + encodeURIComponent(searchInput));
+            window.open("https://bingemaster.netlify.app/results/results.html?query=" + encodeURIComponent(searchInput));
         }
 
         function search2() {
