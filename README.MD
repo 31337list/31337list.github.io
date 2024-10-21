@@ -7,6 +7,7 @@ This is designed to be a one-stop shop for sourcing files, games, roms, manga, m
 
 TODO:
 
+* Fix torrents page - needs new torrent sites/proxies *
 * Fix streaming page - currently many broken search bars *
 
 - clean up jpgs into folder
